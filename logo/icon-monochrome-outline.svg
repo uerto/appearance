@@ -1,0 +1,44 @@
+<svg
+   width="120mm"
+   height="120mm"
+   version="1.0"
+   viewBox="0 0 120 120"
+   xmlns="http://www.w3.org/2000/svg"
+>
+<path
+  id="field-10"
+     d="m 21.432101,25.45 -9.6423,16.7 9.6423,16.7 h 19.284 l 4.4462,-7.7013 -14.838,-25.698 z"
+     fill="none"
+     stroke="#000000"
+     style="stroke-width:1.5" />
+  <path
+     id="field-8"
+     d="m 16.236101,67.85 -4.4462,7.7008 9.6423,16.7 h 8.8925 l 14.088,-24.401 z"
+     fill="none"
+     stroke="#000000"
+     style="stroke-width:1.5" />
+  <path
+     id="field-6"
+     d="m 50.358101,75.551 -9.6418,16.7 9.6418,16.7 h 19.284 l 4.4457,-7.7008 -14.837,-25.699 z"
+     fill="none"
+     stroke="#000000"
+     style="stroke-width:1.5" />
+  <path
+     id="field-4"
+     d="m 74.088101,67.85 -4.4457,7.7008 9.6418,16.7 h 19.284005 l 9.641804,-16.7 -4.4457,-7.7003 z"
+     fill="none"
+     stroke="#000000"
+     style="stroke-width:1.5" />
+  <path
+     id="field-2"
+     d="m 89.676101,25.45 -14.837,25.7 4.4452,7.7003 h 19.284005 l 9.641804,-16.7 -9.641804,-16.7 z"
+     fill="none"
+     stroke="#000000"
+     style="stroke-width:1.5" />
+  <path
+     id="field-0"
+     d="m 40.716101,25.45 9.6419,-16.7 h 19.284 l 9.6419,16.7 -9.6419,16.7 h -19.284 z"
+     fill="none"
+     stroke="#000000"
+     style="stroke-width:1.5" />
+</svg>

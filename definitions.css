@@ -1,0 +1,23 @@
+:root {
+  --uerto-cherry-red: #f10064;
+  --uerto-peony-magenta: #ee1197;
+  --uerto-rose-pink: #d1328f;
+  --uerto-orchid-fuchsia: #cc2bb6;
+  --uerto-lilac-purple: #b83dcf;
+  --uerto-violet-deep: #aa03e5;
+
+  --uerto-light: #EEE;
+  --uerto-dark: #CCC;
+  --uerto-black: black;
+  --uerto-white: white;
+
+  --uerto-horizontal-gradient: linear-gradient(
+    to right,
+    var(--uerto-cherry-red),
+    var(--uerto-peony-magenta),
+    var(--uerto-rose-pink),
+    var(--uerto-orchid-fuchsia),
+    var(--uerto-lilac-purple),
+    var(--uerto-violet-deep)
+  );
+}

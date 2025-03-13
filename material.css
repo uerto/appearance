@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root > * {
+  --md-primary-fg-color: var(--uerto-cherry-red) !important;
+  --md-typeset-a-color: var(--uerto-peony-magenta) !important;
+
+  --md-accent-fg-color: var(--uerto-lilac-purple) !important;
+  --md-code-fg-color: var(--uerto-violet-deep);
+  --md-text-font-family: "Fira Sans";
+  --code-font-family: "Fira Code";
+  --md-code-hl-number-color: var(--uerto-cherry-red);
+  --md-code-hl-special-color: var(--uerto-cherry-red);
+
+  --md-code-hl-function-color: var(--uerto-orchid-fuchsia);
+  --md-code-hl-constant-color: var(--uerto-orchid-fuchsia);
+  --md-code-hl-keyword-color: var(--uerto-black);
+  --md-code-hl-string-color: var(--uerto-black);
+  --md-code-hl-name-color: var(--uerto-cherry-red);
+  --md-code-hl-operator-color: var(--uerto-cherry-red);
+  --md-code-hl-punctuation-color: var(--uerto-cherry-red);
+  --md-code-hl-comment-color: var(--uerto-dark);
+  --md-code-hl-generic-color: var(--uerto-black);
+  --md-code-hl-variable-color: var(--uerto-black);
+
+  --md-code-bg-color: var(--uerto-white);
+  --code-width: 800px;
+  --code-border-color:var(--uerto-cherry-red);
+  --code-font-size: 0.85em;
+  --padding: 12px;
+}
+
+.md-typeset h1,
+.md-typeset h2
+{
+  color: var(--md-primary-fg-color) !important;
+  margin: 0;
+}
+
+.md-header {
+  background: var(--uerto-horizontal-gradient) !important;
+}
+
+div[class^='language-'].highlight {
+  max-width: var(--code-width);
+}
+
+div[class^='language-'].highlight::before {
+  font-family: var(--code-font-family);
+  color: var(--code-border-color);
+  font-size: var(--code-font-size);
+  position: relative;
+  top: calc(2.4*var(--code-font-size));
+  margin-left: calc(var(--code-width) - 12*var(--padding));
+  z-index: 100;
+  padding: 0 var(--padding);
+  background: var(--md-code-bg-color);
+}
+
+.language-python.highlight::before {
+  content: "python";
+}
+
+code {
+  --md-code-bg-color: var(--uerto-light);
+}
+
+pre code {
+  border-radius: 8px !important;
+  border: 1px solid var(--code-border-color);
+  --md-code-bg-color: var(--uerto-white) !important;
+}
+
+.k {
+  font-weight: bold;
+}
