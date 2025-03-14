@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root > * {
-  --md-primary-fg-color: var(--uerto-cherry-red) !important;
-  --md-typeset-a-color: var(--uerto-peony-magenta) !important;
+  --md-primary-fg-color: var(--uerto-cherry-red);
+  --md-typeset-a-color: var(--uerto-peony-magenta);
 
-  --md-accent-fg-color: var(--uerto-lilac-purple) !important;
-  --md-code-fg-color: var(--uerto-violet-deep);
+  --md-accent-fg-color: var(--uerto-violet-deep);
+  --md-code-fg-color: var(--uerto-cherry-red);
   --md-text-font-family: "Fira Sans";
   --code-font-family: "Fira Code";
   --md-code-hl-number-color: var(--uerto-cherry-red);
@@ -33,16 +33,34 @@
 .md-typeset h1,
 .md-typeset h2
 {
-  color: var(--md-primary-fg-color) !important;
   margin: 0;
+}
+
+.md-typeset h1 {
+  color: var(--md-primary-fg-color) !important;
+}
+
+.md-typeset h2 {
+  color: var(--md-accent-fg-color) !important;
 }
 
 .md-header {
   background: var(--uerto-horizontal-gradient) !important;
+  z-index: 3;
+}
+
+article p {
+  text-align: justify;
+  hyphens: auto;
 }
 
 div[class^='language-'].highlight {
   max-width: var(--code-width);
+  margin-top: calc(-2.4*var(--code-font-size));
+}
+
+div.language-text.highlight {
+  margin-top: 0 !important;
 }
 
 div[class^='language-'].highlight::before {
@@ -51,24 +69,30 @@ div[class^='language-'].highlight::before {
   font-size: var(--code-font-size);
   position: relative;
   top: calc(2.4*var(--code-font-size));
-  margin-left: calc(var(--code-width) - 12*var(--padding));
-  z-index: 100;
+  margin-left: calc(100% - 12*var(--padding));
+  z-index: 2;
   padding: 0 var(--padding);
   background: var(--md-code-bg-color);
 }
 
-.language-python.highlight::before {
+/* Not using the content for auto generated docs */
+.doc .language-python.highlight::before {
+  content: "";
+}
+
+.language-python.highlight::before,
+.language-pycon.highlight::before
+{
   content: "python";
 }
 
-code {
-  --md-code-bg-color: var(--uerto-light);
+.language-shell.highlight::before {
+  content: "shell";
 }
 
 pre code {
   border-radius: 8px !important;
   border: 1px solid var(--code-border-color);
-  --md-code-bg-color: var(--uerto-white) !important;
 }
 
 .k {
